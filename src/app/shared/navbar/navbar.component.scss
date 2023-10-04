@@ -1,0 +1,31 @@
+.navbar{
+  display: flex;
+  flex-direction: column;
+  &-top{
+    background: #192129;
+    color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-right{
+      display: flex;
+      &-item{
+        margin-inline: 20px;
+      }
+    }
+  }
+  &-middle{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    img{
+      min-width: 150px;
+      max-width: 23%;
+      margin-right: 15px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="navbar">
+  <div class="navbar-top">
+    <div class="navbar-top-left">
+      <div class="gcse-search"></div>
+    </div>
+    <div class="navbar-top-right">
+      <div class="navbar-top-right-item" *ngFor="let item of contactList">
+        {{item['text']}}
+      </div>
+    </div>
+  </div>
+  <div class="navbar-middle">
+    <img src="/assets/img/Logo_Escudo_Acreditacion_Horizontal.svg" alt="">
+    <h1>Grupo de investigación <abbr title="Grupo de Investigación Internacional de Informática, Comunicación y Gestión del Conocimiento.">GICOGE</abbr></h1>
+  </div>
+  <div class="navbar-bottom">
+    <div>
+      <a [href]="item.link" *ngFor="let item of serviceList">{{item.text}}</a>
+    </div>
+    <div>
+      <a [href]="item.data? item.data :''" *ngFor="let item of pages">{{item}}</a>
+    </div>
+  </div>
+</div>
