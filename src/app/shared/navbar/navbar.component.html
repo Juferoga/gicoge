@@ -11,14 +11,14 @@
   </div>
   <div class="navbar-middle">
     <img src="/assets/img/Logo_Escudo_Acreditacion_Horizontal.svg" alt="">
-    <h1>Grupo de investigación <abbr title="Grupo de Investigación Internacional de Informática, Comunicación y Gestión del Conocimiento.">GICOGE</abbr></h1>
+    <h1>Grupo de investigación <abbr title="Grupo de Investigación Internacional de Informática, Comunicación y Gestión del Conocimiento.">GICOGE</abbr> - Universidad Distrital Francisco José de Caldas</h1>
   </div>
   <div class="navbar-bottom">
-    <div>
+    <div class="navbar-bottom-top">
       <a [href]="item.link" *ngFor="let item of serviceList">{{item.text}}</a>
     </div>
-    <div>
-      <a [href]="item.data? item.data :''" *ngFor="let item of pages">{{item}}</a>
+    <div class="navbar-bottom-bottom">
+      <a [href]="item.data? item.data :''" *ngFor="let item of pages">{{item}}<span>/</span></a>
     </div>
   </div>
 </div>

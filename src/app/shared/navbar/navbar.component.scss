@@ -1,3 +1,10 @@
+/* Variables */
+$blanco : #fff;
+$negro : #000;
+$rojo-oscuro : #8c1919;
+$dorado : #fdb400;
+
+
 .navbar{
   display: flex;
   flex-direction: column;
@@ -26,6 +33,45 @@
       min-width: 150px;
       max-width: 23%;
       margin-right: 15px;
+    }
+    h1{
+      align-self: flex-start;
+      margin-top: 2.5rem;
+      font-weight: 100;
+    }
+  }
+  &-bottom{
+    display: flex;
+    flex-direction: column;
+    &-top{
+      background-image: url('/assets/img/static-page/b1.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-self: flex-end;
+      // background-color: #373435;
+      min-width: 70%;
+      padding: 10px;
+      a{
+        margin-inline: 10px;
+        color: $blanco;
+      }
+    }
+    &-bottom{
+      display: flex;
+      background: $rojo-oscuro;
+      text-transform: uppercase;
+      justify-content: center;
+      padding: 15px;
+      a{
+        color: $blanco;
+        text-decoration: none;
+      }
+      span{
+        color: $dorado;
+        margin-inline: 20px;
+      }
     }
   }
 }
